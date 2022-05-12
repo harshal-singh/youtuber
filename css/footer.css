@@ -1,0 +1,106 @@
+footer{
+    padding: 60px 100px;
+    padding-bottom: 0px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+.yt_link_box{
+    width: 45%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+.yt_link > h4{
+    text-transform: uppercase;
+}
+.yt_link > ul{
+    margin-top: 15px;
+}
+.yt_link > ul li{
+    list-style-type: none;
+}
+.yt_link > ul li{
+    padding: 5px 0;
+    font-weight: 500;
+}
+.email_box{
+    width: 45%;
+}
+.email_box > h2{
+    margin-top: 20px;
+}
+.email_box > input[type="email"]{
+    width: 70%;
+    margin: 20px 0;
+    padding: 15px 20px;
+    border: none;
+    outline: none;
+    font-family: 'Montserrat', sans-serif;
+    border-top: 2px solid var(--background);
+    border-left: 2px solid var(--background);
+    border-bottom: 2px solid var(--background);
+}
+.email_box > button[type="submit"]{
+    cursor: pointer;
+    border: none;
+    outline: none;
+    font-weight: 500;
+    font-family: 'Montserrat', sans-serif;
+    background-color: var(--background);
+}
+.email_box > button[type="submit"] > a{
+    padding: 15px 20px;
+    border: 2px solid var(--background);
+    background-color: var(--background);
+    transition: 0.2s ease;
+}
+.email_box > button[type="submit"] > a:hover{
+    background-color: #f0ac00;
+    border: 2px solid #f0ac00;
+}
+
+/*
+Copy_Right
+*/
+.copy_right{
+    margin-top: 40px;
+    padding: 20px 40px;
+    border-top: 2px solid gainsboro;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.copy_right > div.flip{
+    width: 68%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+/* logo */
+.copy_right > .logo{
+    width: 35px;
+    height: 35px;
+}
+.copy_right > .logo > i{
+    font-size: 2.5rem;
+}
+.copy_right > .logo > h3{
+    margin-left: 5px;
+}
+
+.copy_right > div.flip > h4{
+    font-size: 1rem;
+    font-weight: 400;
+}
+.my_profile > a > i{
+    display: inline-block;
+    color: white;
+    padding: 10px;
+    background-color: black;
+    transition: 0.2s ease;
+}
+.my_profile > a > i:hover{
+    color: black;
+    background-color: #daa000;
+}

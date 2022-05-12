@@ -1,0 +1,21 @@
+.our_team{
+    padding-top: 80px;
+}
+.team{
+    padding: 40px 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(20%, 1fr));
+    grid-column-gap: 20px;
+    grid-row-gap: 80px;
+}
+.members{
+    text-align: center;
+    padding-top: 20px;
+    background: linear-gradient(to bottom, var(--background), white);
+}
+.team_text > h3{
+    margin: 10px 0;
+}
+.team_text > .profile > a{
+    margin: 0 5px;
+}

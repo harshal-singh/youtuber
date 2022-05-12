@@ -1,0 +1,35 @@
+
+.subscribe_box{
+    padding-top: 80px;
+}
+.subscribe_banner{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: black;
+    padding: 40px 80px;
+}
+.subscribe_banner > h1{
+    width: 60%;
+    color: white;
+    font-size: 3rem;
+    line-height: 60px;
+}
+.subscribe_banner > h1 span{
+    color: var(--background);
+}
+
+.subscribe_banner > .yt_btn{
+    margin-top: 0;
+    background-color: red;
+}
+.subscribe_banner > .yt_btn > img{
+    filter: saturate(1%);
+}
+.subscribe_banner > .yt_btn:hover{
+    color: black;
+    background-color: white;
+}
+.subscribe_banner > .yt_btn:hover.yt_btn>img{
+    filter: none;
+}

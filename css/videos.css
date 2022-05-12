@@ -1,0 +1,35 @@
+/*
+|----------------------------------------------------|
+|-------------------     VIDEO   --------------------|
+|----------------------------------------------------|
+*/
+.recent_videos{
+    padding-top: 100px;
+}
+/*
+|------------------   video box   -------------------|
+*/
+.videos_box{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(31.5%, 1fr));
+    grid-column-gap: 20px;
+    grid-row-gap: 10px;
+    margin-top: 20px;
+}
+/*
+|------------------     video     -------------------|
+*/
+.video{
+    cursor: pointer;
+    padding: 20px 10px;
+    position: relative;
+    transition: 0.2s ease;
+}
+.video:hover{
+    box-shadow:  0 20px 40px rgba(0,0,0,0.4);
+}
+.video > h4{
+    color: gray;
+    font-weight: 500;
+    margin: 15px 0 5px;
+}

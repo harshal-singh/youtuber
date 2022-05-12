@@ -1,0 +1,578 @@
+/* large tablet */
+@media only screen and (max-width: 1200px){
+    .padding{
+        padding-left: 25px;
+        padding-right: 25px;
+    }
+
+    /* hero */
+    .hero{
+        height: 700px;
+    }
+    .banner_text{
+        margin-left: 50px;
+    }
+    .banner_img{
+        bottom: 35px;
+        right: 50px;
+        width: 485px;
+    }
+    .typeof_title{
+        position: absolute;
+        top: -105px;
+    }
+    .typeof_title > h1{
+        font-size: 7rem;
+    }
+    .yt_name{
+        font-size: 2.2rem;
+    }
+
+    /* features */
+    .f_text > h1{
+        font-size: 2.7rem;
+    }
+    .f_text > p{
+        font-size: 1.3rem;
+    }
+    .f_left{
+        padding: 0 40px;
+    }
+    .f_right{
+        padding: 0 40px;
+    }
+
+    /* about */
+    .about{
+        padding: 80px 60px;
+    }
+    .about_tag{
+        flex-direction: column;
+    }
+    .stats_box > h2{
+        width: 80px;
+        height: 80px;
+        font-size: 1.2rem;
+    }
+    .stats_box > span > h3 {
+        font-size: 1.1rem;
+    }
+
+    /* video */
+    .video > h4{
+        font-size: 0.9rem;
+        margin: 10px 0 5px;
+    }
+    .video > h3{
+        font-size: 1.1rem;
+    }
+    /* subscriber */
+    .subscribe_banner{
+        padding: 40px;
+    }
+    .subscribe_banner > h1{
+        font-size: 2.8rem;
+        line-height: 50px;
+    }
+    /* footer */
+    footer{
+        padding: 80px 40px;
+        padding-bottom: 20px;
+    }
+    .copy_right > div.flip{
+        width: 76%;
+    }
+}
+
+/* small tablet */
+@media only screen and (max-width: 1024px){
+    .padding{
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    .yt_btn{
+        font-size: 1.1rem;
+        padding: 12px 25px;
+    }
+    /* hero */
+    .hero{
+        height: 625px;
+    }
+    .banner{
+        height: 325px;
+    }
+    .banner_img{
+        bottom: 10px;
+        right: 10px;
+        width: 420px;
+    }
+    .typeof_title{
+        position: absolute;
+        top: -90px;
+    }
+    .typeof_title > h1{
+        font-size: 6rem;
+    }
+    .yt_name{
+        font-size: 2rem;
+    }
+    .yt_profession > h2{
+        line-height: 30px;
+    }
+    /* channel */
+    .channel{
+        padding-top: 50px;
+        flex-direction: column;
+    }
+    .tag{
+        display: block;
+    }
+    .text{
+        margin-top: 40px;
+    }
+    .channel_text{
+        margin-left: 0;
+        padding: 0 10px;
+    }
+    /* features */
+    .f_text > h1{
+        font-size: 2.2rem;
+    }
+    .f_text > p{
+        font-size: 1.1rem;
+    }
+    .subscribe > i{
+        font-size: 3.25rem;
+    }
+    .subscribe > h2{
+        font-size: 1.2rem;
+    }
+    .subscribe_banner > h1{
+        width: 60%;
+    }
+    /* about */
+    .about{
+        padding: 60px;
+    }
+    .about_text{
+        flex-direction: column;
+    }
+    .about_tag{
+        flex-direction: row;
+    }
+    .about_tag_line > p {
+        margin-left: 0;
+        margin-top: 40px;
+    }
+    .about_tag_line:nth-child(1){
+        margin-right: 20px;
+    }
+    .about_tag_line:nth-child(2){
+        margin-left: 20px;
+    }
+    .about > hr{
+        margin: 50px 0;
+    }
+    .stats{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-row-gap: 20px;
+    }
+    /* video */
+    .video > h4 {
+        font-size: 0.8rem;
+        margin: 5px 0;
+    }
+    .video > h3 {
+        font-size: 1rem;
+    }
+    /* subscriber */
+    .subscribe_banner{
+        padding: 40px 25px;
+    }
+    .subscribe_banner > h1{
+        font-size: 2.6rem;
+        line-height: 45px;
+    }
+    /* footer */
+    footer{
+        align-items: center;
+        flex-direction: column;
+    }
+    .email_box{
+        width: 60%;
+        margin-top: 40px;
+        text-align: center;
+    }
+    .email_box > h2 {
+        margin-top: 0px;
+    }
+    .yt_link_box{
+        width: 80%;
+    }
+    .copy_right{
+        margin-top: 20px;
+        padding-top: 40px;
+        flex-direction: column;
+    }
+    .copy_right > div.flip{
+        width: 100%;
+        flex-direction: column-reverse;
+    }
+    .copy_right > .flip > .my_profile{
+        margin: 40px 0 30px;
+    }
+    .copy_right > .flip > .my_profile a{
+        margin: 0 20px;
+    }
+    .copy_right > .logo{
+        margin-right: 100px;
+    }
+}
+
+/* large phones */
+@media only screen and (max-width: 768px){
+    body{
+        overflow-x: hidden;
+    }
+    .hero,
+    .about_us,
+    .our_team{
+        padding-left: 0;
+        padding-right: 0;
+    }
+    nav{
+        display: none;
+    }
+    nav + .open{
+        display: block;
+    }
+    header + #menu{
+        display: block;
+        max-width: 100vw;
+    }
+    body > header{
+        padding: 15px!important;
+        background-color: white!important;
+    }
+    /* logo */
+    header > .logo{
+        width: 35px;
+        height: 35px;
+    }
+    header > .logo > i{
+        font-size: 2.5rem;
+    }
+    header > .logo > h3{
+        margin-left: 5px;
+    }
+    .hero{
+        height: 100vh;
+        padding-bottom: 0;
+    }
+    .banner{
+        width: 100%;
+        height: 100%;
+        flex-direction: column-reverse;
+    }
+    .banner_img{
+        height: min-content;
+        top: 80px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    .banner_text{
+        margin: 0;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+    .banner_text .yt_btn{
+        margin: 20px auto;
+    }
+    .yt_profession {
+        width: fit-content;
+    }
+    .yt_profession > h2{
+        font-size: 1.5rem;
+    }
+    .typeof_title > h1{
+        display: none;
+    }
+    /* channel */
+    .arrow{
+        height: 150px;
+    }
+    .tag > h1{
+        line-height: 40px;
+        padding: 10px 0;
+    }
+    .text{
+        flex-direction: column;
+    }
+    .channel_text{
+        margin-bottom: 25px;
+    }
+    .channel_text > p {
+        margin-top: 10px;
+    }
+    /* features */
+    .features{
+        padding-left: 25px;
+        padding-right: 25px;
+        flex-direction: column;
+    }
+    .f_left{
+        width: 100%;
+        padding: 0 20px;
+        margin-bottom: 80px;
+    }
+    .f_right > img.hd {
+        width: 90px;
+        position: absolute;
+        top: -30px;
+        left: 10px;
+    }
+    /* about */
+    .about_tag {
+        flex-direction: column;
+    }
+    .about{
+        padding: 60px 40px;
+    }
+    .about_text > h1{
+        line-height: 60px;
+        text-align: center;
+    }
+    .about_text > h1, .about_text > h1 > span{
+        font-size: 3rem;
+    }
+    .about_tag_line > p{
+        font-size: 16px;
+    }
+    .about_tag_line:nth-child(1){
+        margin-right: 0px;
+    }
+    .about_tag_line:nth-child(2){
+        margin-left: 0px;
+    }
+    /* video */
+    .recent_videos{
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .videos_box{
+        grid-template-columns: 1fr;
+    }
+    .video > h3 {
+        font-size: 1.1rem;
+    }
+    .video > h4 {
+        font-size: 0.85rem;
+        margin: 15px 0 10px;
+    }
+    /* team */
+    .team{
+        padding: 0 40px;
+        grid-template-columns: repeat(2, 1fr);
+        grid-row-gap: 20px;
+        grid-column-gap: 30px;
+        margin-top: 40px;
+    }
+    /* subscribe */
+    .subscribe_banner > h1 {
+        width: 100%;
+        text-align: center;
+        font-size: 2.2rem;
+        line-height: 35px;
+    }
+    .subscribe_banner{
+        flex-direction: column;
+    }
+    .subscribe_banner > .yt_btn {
+        margin-top: 30px;
+    }
+    /* footer */
+    footer {
+        padding: 40px 20px;
+        padding-bottom: 0px;
+    }
+    .yt_link_box {
+        width: 100%;
+    }
+    .email_box {
+        width: 100%;
+    }
+    .copy_right{
+        padding: 20px;
+        padding-top: 40px;
+    }
+    .copy_right > div.flip > h4 {
+        font-size: 0.9rem;
+        text-align: center;    }
+}
+
+/* small phones */
+@media only screen and (max-width: 480px){
+    .banner_img{
+        width: 85%;
+        top: 100px;
+    }
+    .banner_text .yt_btn {
+        margin: 18px auto;
+    }
+    .banner_text {
+        margin-bottom: 40px;
+    }
+    .yt_btn {
+        font-size: 1rem;
+        padding: 10px 20px;
+    }
+    .yt_btn > img {
+        width: 25px;
+        margin-left: 10px;
+    }
+    .yt_profession > h2 {
+        padding: 0 15px;
+        font-size: 1.4rem;
+        line-height: 25px;
+    }
+    .yt_name{
+        font-size: 1.4rem;
+    }
+    .tag > h1 {
+        font-size: 1.8rem;
+        line-height: 30px;
+    }
+    .features {
+        padding-top: 40px;
+    }
+    .text {
+        padding: 0 20px;
+    }
+    .channel_text > p {
+        font-size: 1rem;
+    }
+    .f_right {
+        padding: 0px;
+    }
+    .f_left {
+        padding: 0;
+    }
+    .f_text > h1 {
+        font-size: 2rem;
+    }
+    .subscribe > h2 {
+        font-size: 1.1rem;
+    }
+    .subscribe > i {
+        font-size: 3rem;
+        margin-right: 5px;
+    }
+    .f_text > p {
+        font-size: 1rem;
+    }
+    .f_right > img.hd {
+        width: 80px;
+        position: absolute;
+        top: -26px;
+        left: 20px;
+    }
+    
+    .about {
+        padding: 40px 25px;
+    }
+    .about .about_text > h1 > span {
+        font-size: 2.25rem;
+    }
+    .about .about_text > h1{
+        line-height: 38px;
+        font-size: 2.2rem;
+    }
+    .stats {
+        grid-template-columns: 1fr;
+    }
+    .yt_link_box {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-row-gap: 40px;
+    }
+    .recent_videos {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    .about_text > h1, .about_text > h1 > span {
+        font-size: 2.8rem;
+    }
+    .about_text > h1 {
+        line-height: 50px;
+    }
+    .team{
+        padding: 0 20px;
+        grid-column-gap: 20px;
+    }
+    .team_text > h3 {
+        font-size: 1rem;
+    }
+    .email_box {
+        margin-bottom: 40px;
+    }
+    .email_box > input[type="email"] {
+        width: 100%;
+        border-right: 2px solid var(--background);
+    }
+    .email_box > button[type="submit"] > a {
+        display: block;
+    }
+}
+@media only screen and (max-width: 425px){
+    .banner_img{
+        width: 85%;
+        top: 120px;
+    }
+}
+/* small phones */
+@media only screen and (max-width: 365px){
+    .banner_img {
+        top: 110px;
+    }    
+    .yt_name {
+        font-size: 1.2rem;
+    }
+    .tag > h1 {
+        font-size: 1.5rem;
+        line-height: 25px;
+    }
+    .yt_profession > h2 {
+        padding: 0px;
+        font-size: 1.3rem;
+        line-height: 20px;
+    }
+    .text {
+        padding: 0px;
+    }
+    .f_text > h1 {
+        font-size: 1.6rem;
+    }
+    .subscribe > h2 {
+        font-size: 1rem;
+    }
+    .subscribe > i {
+        font-size: 2.8rem;
+    } 
+    .subscribe_banner > h1 {
+        font-size: 2.1rem;
+    }   
+    .f_text > p {
+        font-size: 0.9rem;
+    }
+    .about .about_text > h1 {
+        line-height: 32px;
+        font-size: 1.8rem;
+    }    
+    .about .about_text > h1 > span {
+        font-size: 1.9rem;
+    }
+    .copy_right > .flip > .my_profile a {
+        margin: 0 10px;
+    }   
+}

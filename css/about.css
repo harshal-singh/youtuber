@@ -1,0 +1,100 @@
+/*
+|----------------------------------------------------|
+|-------------------     ABOUT   --------------------|
+|----------------------------------------------------|
+*/
+.about_us{
+    padding-top: 80px;
+}
+.about{
+    color: white;
+
+    padding: 80px;
+    background-color: black;
+
+}
+.about > hr{
+    border: none;
+    margin: 80px 0;
+    border-top: 2px solid gray;
+}
+
+/*
+|----------------     ABOUT TEXT    -----------------|
+*/
+.about_text{
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+.about_text > h1{
+    font-size: 3.5rem;
+    line-height: 60px;
+}
+.about_text > h1 > span{
+    text-transform: uppercase;
+    font-size: 3.65rem;
+    color: var(--background);
+}
+
+/*
+|-------------------    TAG LINE   ------------------|
+*/
+.about_tag{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.about_tag_line > p{
+    margin-left: 40px;
+    margin-top: 10px;
+    padding: 5px 20px;
+    text-align: justify;
+
+    font-size: 18px;
+    border-left: 2px solid var(--background);
+}
+
+.about_tag_line > h3{
+    float: right;
+    color: gray;
+    font-weight: 500;
+    margin-top: 10px;
+}
+
+/*
+|----------------------------------------------------|
+|-------------------     stats   --------------------|
+|----------------------------------------------------|
+*/
+.stats{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.stats_box{
+    max-width: fit-content;
+    display: flex;
+    align-items: flex-end;
+}
+.stats_box > h2{
+    color: black;
+    width: 100px;
+    height: 100px;
+    margin-right: 15px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--background);
+}
+.stats_box > span > h3{
+    font-size: 1.4rem;
+    font-weight: 600;
+}
+.stats_box > span > p{
+    color: gray;
+    font-weight: 500;
+    font-size: 1rem;
+}

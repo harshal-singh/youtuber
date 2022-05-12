@@ -1,0 +1,137 @@
+@import "common.css";
+@import "hero.css";
+@import "channel.css";
+@import "features.css";
+@import "about.css";
+@import "videos.css";
+@import "team.css";
+@import "subscriber.css";
+@import "footer.css";
+@import "mediaQuery.css";
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+:root{
+    /* --background: #fab500; */
+    --background: rgb(250,200,45);
+}
+
+/*
+|----------------------------------------------------|
+|--------------------   HEADER    -------------------|
+|----------------------------------------------------|
+*/
+header{
+    z-index: 100;
+    position: fixed;
+    top: 0;
+    
+    width: 100%;
+    padding: 40px;
+    
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transition: 0.4s ease;
+}
+
+.open{
+    cursor: pointer;
+    display: none;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+/* mobile */
+#menu{
+    display: none;
+    z-index: 555555;
+    position: fixed;
+    top: 0;
+    left: -780px;
+    width: 375px;
+    height: 100vh;
+    background-color: white;
+    transition: 0.5s cubic-bezier(0.23, 1, 0.320, 1);
+    box-shadow: 20px 0px 40px 355px rgba(0,0,0,0.2);
+}
+#menu .menu_bar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    margin-bottom: 40px;
+}
+#menu > .menu_link{
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+#menu > .menu_link > a{
+    display: block;
+    width: 100%;
+    padding: 15px;
+    text-align: center;
+    transition: 0.2s ease;
+}
+
+#menu > .menu_link > a:hover{
+    background-color: gainsboro;
+}
+.menu_bar{
+    border-bottom: 2px solid gainsboro;
+}
+.menu_bar > .logo{
+    width: 35px;
+    height: 35px;
+}
+.menu_bar > .logo > i{
+    font-size: 2.5rem;
+}
+.menu_bar > .logo > h3{
+    margin-left: 5px;
+}
+.menu_bar .close{
+    cursor: pointer;
+    font-size: 2rem;
+    margin-top: 8px;
+}
+/* logo / img */
+.logo{
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    border-radius: 50%;
+    background: var(--background);
+}
+.logo > i{
+    font-size: 3rem;
+}
+.logo > h3{
+    margin-left: 10px;
+}
+
+/* nav / ul / li*/
+nav > ul{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+nav > ul >  li{
+    padding: 0 15px;
+    list-style-type: none;
+    font-weight: 600;
+}

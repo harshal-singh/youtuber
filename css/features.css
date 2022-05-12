@@ -1,0 +1,68 @@
+/*
+|----------------------------------------------------|
+|---------------   FEATURES SECTION   ---------------|
+|----------------------------------------------------|
+*/
+.features{
+    padding-top: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.f_left{
+    width: 60%;
+    padding: 0 80px;
+}
+/*
+|------------------   SUBSCRIBE   ------------------|
+*/
+
+.subscribe{
+    max-width: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.subscribe > i{
+    font-size: 3.5rem;
+    margin-right: 10px;
+}
+.subscribe > h2{
+    color: gray;
+    font-weight: 600;
+    text-transform: capitalize;
+}
+
+/*
+|------------------    F TEXT    ------------------|
+*/
+.f_text{
+    /* width: 90%; */
+    margin-top: 10px;
+}
+.f_text > h1{
+    font-size: 3rem;
+    font-weight: 800;
+}
+.f_text > p{
+    margin-top: 10px;
+    font-size: 1.4rem;
+}
+/*
+|------------------    F TEXT    ------------------|
+*/
+.f_right{
+    padding: 0 80px;
+    position: relative;
+    top: 0;
+}
+.f_right > img.camera{
+    width: 100%;
+    float: right;
+}
+.f_right > img.hd{
+    width: 110px;
+    position: absolute;
+    top: -40px;
+    left: 20px;
+}

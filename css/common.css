@@ -1,0 +1,69 @@
+
+/*
+|------------------  a  -------------------|
+*/
+a{
+    color: black;
+    text-decoration: none;
+}
+
+/*
+|------------------  img  -----------------|
+*/
+img{
+    width: 100%;
+    pointer-events: none;
+}
+
+/*
+|------------------ yt_btn -----------------|
+*/
+.padding{
+    padding: 0 40px;
+}
+
+/*
+|------------------ yt_btn -----------------|
+*/
+.yt_btn{
+    cursor: pointer;
+    max-width: fit-content;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    color: white;
+    margin-top: 30px;
+    padding: 15px 30px;
+    font-size: 1.25rem;
+    border-radius: 50px;
+    transition: 0.2s ease;
+    background-color: black;
+}
+.yt_btn:hover{
+    background-color: red;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.4);
+}
+.yt_btn > img{
+    width: 35px;
+    margin-left: 20px;
+}
+.yt_btn:hover.yt_btn>img{
+    filter: saturate(1%);
+}
+/*
+|----------------- heading ---------------|
+*/
+.heading{
+    text-align: center;
+}
+.heading > h4{
+    font-size: 1.3rem;
+    font-weight: 500;
+    color: var(--background);
+}
+.heading > h2{
+    font-size: 1.8rem;
+    font-weight: 700;
+}
