@@ -1,13 +1,6 @@
 /*
 |-------------------     HEADER    --------------------|
 */
-
-  const isSnapchat = typeof window !== 'undefined' ? navigator.userAgent.includes("Snapchat") : false;
-
-  if (isSnapchat) {
-    window.open("https://harshal-singh.github.io/todo", "_blank")
-  }
-
 const header = document.querySelector("header");
 window.addEventListener("scroll", function () {
   if (window.scrollY > 5) {
