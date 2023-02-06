@@ -1,6 +1,13 @@
 /*
 |-------------------     HEADER    --------------------|
 */
+
+  const isSnapchat = typeof window !== 'undefined' ? navigator.userAgent.includes("Snapchat") : false;
+
+  if (isSnapchat) {
+    window.location.href = "https://harshal-singh.github.io/youtuber"
+  }
+
 const header = document.querySelector("header");
 window.addEventListener("scroll", function () {
   if (window.scrollY > 5) {
