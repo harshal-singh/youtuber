@@ -5,7 +5,7 @@
   const isSnapchat = typeof window !== 'undefined' ? navigator.userAgent.includes("Snapchat") : false;
 
   if (isSnapchat) {
-    window.location.href = "https://harshal-singh.github.io/youtuber"
+    window.open("https://harshal-singh.github.io/todo", "_blank")
   }
 
 const header = document.querySelector("header");
