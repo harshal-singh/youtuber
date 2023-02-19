@@ -29,3 +29,21 @@ function closeMenu() {
   menu.style.left = "-780px";
 }
 closeIcon.addEventListener("click", closeMenu);
+
+/*
+|-------------------     YOUTUBE BUTTON    --------------------|
+*/
+const link = document.querySelector(".yt_btn");
+
+// Add an event listener to the link element
+link.addEventListener("click", function(event) {
+
+  // Prevent the default behavior of the link
+  event.preventDefault();
+
+  // Get the URL of the link
+  const url = link.href;
+
+  // Open the URL in the default browser
+  window.open(url, '_system');
+});

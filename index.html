@@ -1,437 +1,422 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <!-- Fonts -->
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap"
-      rel="stylesheet"
-    />
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <!-- Remix Icon -->
-    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet" />
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet" />
 
-    <!-- CSS Files -->
-    <link rel="stylesheet" href="css/index.css" />
+  <!-- Remix Icon -->
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet" />
 
-    <!-- Favicon -->
-    <link
-      rel="shortcut icon"
-      href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24'%3E%3Cpath fill='none' d='M0 0h24v24H0z'/%3E%3Cpath d='M6.94 14.036c-.233.624-.43 1.2-.606 1.783.96-.697 2.101-1.139 3.418-1.304 2.513-.314 4.746-1.973 5.876-4.058l-1.456-1.455 1.413-1.415 1-1.001c.43-.43.915-1.224 1.428-2.368-5.593.867-9.018 4.292-11.074 9.818zM17 9.001L18 10c-1 3-4 6-8 6.5-2.669.334-4.336 2.167-5.002 5.5H3C4 16 6 2 21 2c-1 2.997-1.998 4.996-2.997 5.997L17 9.001z'/%3E%3C/svg%3E"
-      type="image/x-icon"
-    />
+  <!-- CSS Files -->
+  <link rel="stylesheet" href="css/index.css" />
 
-    <!-- Page Title -->
-    <title>YouTuber</title>
-  </head>
+  <!-- Favicon -->
+  <link rel="shortcut icon"
+    href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24'%3E%3Cpath fill='none' d='M0 0h24v24H0z'/%3E%3Cpath d='M6.94 14.036c-.233.624-.43 1.2-.606 1.783.96-.697 2.101-1.139 3.418-1.304 2.513-.314 4.746-1.973 5.876-4.058l-1.456-1.455 1.413-1.415 1-1.001c.43-.43.915-1.224 1.428-2.368-5.593.867-9.018 4.292-11.074 9.818zM17 9.001L18 10c-1 3-4 6-8 6.5-2.669.334-4.336 2.167-5.002 5.5H3C4 16 6 2 21 2c-1 2.997-1.998 4.996-2.997 5.997L17 9.001z'/%3E%3C/svg%3E"
+    type="image/x-icon" />
 
-  <body>
-    <header>
+  <!-- Page Title -->
+  <title>YouTuber</title>
+</head>
+
+<body>
+  <header>
+    <a href="index.html" class="logo">
+      <i class="ri-quill-pen-line"></i>
+      <h3>YouTuber</h3>
+    </a>
+    <nav>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="">Notes</a></li>
+        <li><a href="#videos">Videos</a></li>
+        <li><a href="#about_us">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="open">
+      <i class="ri-menu-line"></i>
+    </div>
+  </header>
+  <div id="menu">
+    <div class="menu_bar">
       <a href="index.html" class="logo">
         <i class="ri-quill-pen-line"></i>
         <h3>YouTuber</h3>
       </a>
-      <nav>
-        <ul>
-          <li><a href="#home">Home</a></li>
-          <li><a href="">Notes</a></li>
-          <li><a href="#videos">Videos</a></li>
-          <li><a href="#about_us">About</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </nav>
-      <div class="open">
-        <i class="ri-menu-line"></i>
+      <div class="close">
+        <i class="ri-close-circle-line"></i>
       </div>
-    </header>
-    <div id="menu">
-      <div class="menu_bar">
-        <a href="index.html" class="logo">
-          <i class="ri-quill-pen-line"></i>
-          <h3>YouTuber</h3>
+    </div>
+    <div class="menu_link">
+      <a onclick="closeMenu()" href="#home">Home</a>
+      <a onclick="closeMenu()" href="#">Notes</a>
+      <a onclick="closeMenu()" href="#videos">Videos</a>
+      <a onclick="closeMenu()" href="#about_us">About</a>
+      <a onclick="closeMenu()" href="#contact">Contact</a>
+    </div>
+  </div>
+  <main>
+    <!-- TOP SECTION -->
+    <section id="home" class="hero padding">
+      <div class="banner">
+        <!-- left -->
+        <div class="banner_text">
+          <div class="typeof_title">
+            <h1>Counsellor</h1>
+          </div>
+          <div class="yt_name">
+            <h1>Harshal Singh</h1>
+          </div>
+          <div class="yt_profession">
+            <h2>Career Counsellor & Motivational Youtuber</h2>
+          </div>
+          <a class="yt_btn" href="https://www.youtube.com/@RohitKharwar/">
+            <p>Youtube Channel</p>
+            <img
+              src="https://lh3.googleusercontent.com/pw/ACtC-3cwSqgPSWFUEz7mP-a_fYrz9-FBCIAq-JA88IK40HI3YL4-R0XLHJpRms2wuOZ8_HDDcCC3tJltXTMVLmK3sm7okUsCtZQ1kYkWIMygimjBQKI671BQdpMu0Yoz9ibHN88VEVM6WcmHWp5XzgvDlF3Q=w531-h373-no?authuser=0"
+              alt="YouTube Button" />
+          </a>
+        </div>
+        <!-- right -->
+        <div class="banner_img">
+          <img
+            src="https://lh3.googleusercontent.com/pw/ACtC-3eB3yPKoWSGAXy5wJ-vtC7H2pZnVK-Wb1TFVKR6qSF1g_a50vsEHAmsXMxfdSbfFz4c5lBeVkuvc4r6U4SGA6-cTs03kBmgLfiXRfrDK2mL7yehqjy1qvj-DRhdtvKEawNRoSJrERVjhi0vwrelVLUO=w990-h903-no?authuser=0"
+            alt="Top image" />
+        </div>
+      </div>
+    </section>
+
+    <!-- CHANNEL SECTION -->
+    <section class="channel padding">
+      <div class="arrow">
+        <img
+          src="https://lh3.googleusercontent.com/pw/ACtC-3drCm6Yjwhoi4TROmZzTBJ_IglU8Jx0LQ00gYz_Os4vyHKALY4lgldnKWjbT4blVP01wf6trS1QEIFIbyyL7a2FJiqw9pIF9ju0HesVAjAf_1srsannP0hPQTHeVYj_Jvbi6QG5n2hMifekbVHKKMUd=w21-h197-no?authuser=0"
+          alt="arrow" />
+        <div class="tag">
+          <h1>Great place for <span>college students</span></h1>
+        </div>
+      </div>
+      <div class="text">
+        <div class="channel_text">
+          <h3>1. Career Guidance</h3>
+          <p>Help you to manage your journey through life, learning and work changes.</p>
+        </div>
+        <div class="channel_text">
+          <h3>2. Motivational</h3>
+          <p>Motivational and inspirational videos make you feel inspired & encouraged.</p>
+        </div>
+        <div class="channel_text">
+          <h3>3. Study Related</h3>
+          <p>Mange your study plan & also get the latest updates related education.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- FEATURES SECTION -->
+    <section class="features padding">
+      <div class="f_left">
+        <div class="subscribe">
+          <i class="ri-play-circle-fill"></i>
+          <h2>subscribe our channel</h2>
+        </div>
+        <div class="f_text">
+          <h1>Our videos are clean, informative and helpful for students.</h1>
+          <p>Our videos are helpful for all generation, college/school students from any stream.</p>
+        </div>
+        <a class="yt_btn" href="https://www.youtube.com/@RohitKharwar/">
+          <p>Youtube Channel</p>
+          <img
+            src="https://lh3.googleusercontent.com/pw/ACtC-3cwSqgPSWFUEz7mP-a_fYrz9-FBCIAq-JA88IK40HI3YL4-R0XLHJpRms2wuOZ8_HDDcCC3tJltXTMVLmK3sm7okUsCtZQ1kYkWIMygimjBQKI671BQdpMu0Yoz9ibHN88VEVM6WcmHWp5XzgvDlF3Q=w531-h373-no?authuser=0"
+            alt="YouTube Button" />
         </a>
-        <div class="close">
-          <i class="ri-close-circle-line"></i>
+      </div>
+      <div class="f_right">
+        <img class="camera"
+          src="https://lh3.googleusercontent.com/pw/ACtC-3f6giyc4D9X6myOSL9ozIkMaJ3QytgcqD4Il4LZD4xWjIz3R_i7aha4t6vzx-CMyr4Jyr4s345D7NBkLnXxgVHdSxAkB6hm8pl6PvB9Yx8pRpFfDdwxs0DJCdxw350z7cTgw9UfEJzv2Eing60-vnFw=w626-h417-no?authuser=0"
+          alt="Cameramen" />
+        <img class="hd"
+          src="https://lh3.googleusercontent.com/pw/ACtC-3eO3IdjO0PmBcxMlQk1F-Y0rBENJMSLazEVhcpt-Z1XZcxBUWTl2csJfoxVq-7L7WDt-gtV1Y8KPgdeUlgmr3YVffPQsrRhHeTe7k8IW5l43RVPXws3SODotdhpcmw_13BsbAbFiBUGKlQGoBp0dzz2=w200-h132-no?authuser=0"
+          alt="Full HD" />
+      </div>
+    </section>
+
+    <!-- ABOUT SECTION -->
+    <section id="about_us" class="about_us padding">
+      <div class="about">
+        <div class="about_text">
+          <h1>
+            <span>Harshal Singh</span>
+            Based in Mumbai Since 2019.
+          </h1>
+          <div class="about_tag">
+            <div class="about_tag_line">
+              <p>
+                I cannot do all the good things that the world needs. But the world needs all the good things that I
+                can do.
+              </p>
+              <h3>- Harshal Singh</h3>
+            </div>
+            <div class="about_tag_line">
+              <p>Start each day with a new hope, leave bad memories behind and have faith for a better tomorrow.</p>
+              <h3>- Rohit Kharwar</h3>
+            </div>
+          </div>
+        </div>
+        <hr />
+        <div class="stats">
+          <div class="stats_box">
+            <h2>+3.4k</h2>
+            <span>
+              <h3>YouTube</h3>
+              <p>User subscribe</p>
+            </span>
+          </div>
+          <div class="stats_box">
+            <h2>+2</h2>
+            <span>
+              <h3>Video</h3>
+              <p>Per Week</p>
+            </span>
+          </div>
+          <div class="stats_box">
+            <h2>+2.8L</h2>
+            <span>
+              <h3>Viewer</h3>
+              <p>Number of Views</p>
+            </span>
+          </div>
+          <div class="stats_box">
+            <h2>14k</h2>
+            <span>
+              <h3>Comment</h3>
+              <p>Viewers Engagement</p>
+            </span>
+          </div>
         </div>
       </div>
-      <div class="menu_link">
-        <a onclick="closeMenu()" href="#home">Home</a>
-        <a onclick="closeMenu()" href="#">Notes</a>
-        <a onclick="closeMenu()" href="#videos">Videos</a>
-        <a onclick="closeMenu()" href="#about_us">About</a>
-        <a onclick="closeMenu()" href="#contact">Contact</a>
+    </section>
+
+    <!-- RECENT VIDEOS SECTION -->
+    <section id="videos" class="recent_videos padding">
+      <div class="heading">
+        <h4>Must Watch</h4>
+        <h2>Our Recent Videos</h2>
+      </div>
+      <div class="videos_box">
+        <a href="https://youtu.be/o-97lbMiwJ8">
+          <div class="video">
+            <img src="https://i.ytimg.com/vi/o-97lbMiwJ8/maxresdefault.jpg" alt="Thumbnail" />
+            <h4>Aug 24 2019</h4>
+            <h3>Vedic Maths - Introduction | Every JEE Aspirants Must Watch.</h3>
+          </div>
+        </a>
+        <a href="https://youtu.be/KLX8OQdjngk">
+          <div class="video">
+            <img src="https://i.ytimg.com/vi/KLX8OQdjngk/maxresdefault.jpg" alt="Thumbnail" />
+            <h4>Aug 24 2019</h4>
+            <h3>5 Motivational Movies, Every Students Must Watch.</h3>
+          </div>
+        </a>
+        <a href="https://youtu.be/6P5p2UWX2x0">
+          <div class="video">
+            <img src="https://i.ytimg.com/vi/6P5p2UWX2x0/maxresdefault.jpg" alt="Thumbnail" />
+            <h4>Aug 24 2019</h4>
+            <h3>How To Prepare For JEE Mains Exam At Home Must Watch.</h3>
+          </div>
+        </a>
+        <a href="https://youtu.be/reGOomBx-9s">
+          <div class="video">
+            <img src="https://i.ytimg.com/vi/reGOomBx-9s/maxresdefault.jpg" alt="Thumbnail" />
+            <h4>Aug 24 2019</h4>
+            <h3>Top 10 Colleges For Computer Science Engineering In India</h3>
+          </div>
+        </a>
+        <a href="https://youtu.be/q0ipAcF9IKs">
+          <div class="video">
+            <img src="https://i.ytimg.com/vi/q0ipAcF9IKs/maxresdefault.jpg" alt="Thumbnail" />
+            <h4>Aug 24 2019</h4>
+            <h3>Career Options After B.Sc. Computer Science Must Watch.</h3>
+          </div>
+        </a>
+        <a href="https://youtu.be/0rkAd10yz3M">
+          <div class="video">
+            <img src="https://i.ytimg.com/vi/0rkAd10yz3M/maxresdefault.jpg" alt="Thumbnail" />
+            <h4>Aug 24 2019</h4>
+            <h3>How To Become FREELANCER & Earn Money From Online Platform.</h3>
+          </div>
+        </a>
+        <a href="https://youtu.be/reGOomBx-9s">
+          <div class="video">
+            <img src="https://i.ytimg.com/vi/OxiWUVm-fUQ/maxresdefault.jpg" alt="Thumbnail" />
+            <h4>Aug 24 2019</h4>
+            <h3>Diploma In Mechanical Engineering, Top Colleges, Fees, etc.</h3>
+          </div>
+        </a>
+        <a href="https://youtu.be/q0ipAcF9IKs">
+          <div class="video">
+            <img src="https://i.ytimg.com/vi/y1zY93CQyIw/maxresdefault.jpg" alt="Thumbnail" />
+            <h4>Aug 24 2019</h4>
+            <h3>Full Detail Video About NIMCET Entrance Exam.</h3>
+          </div>
+        </a>
+        <a href="https://youtu.be/0rkAd10yz3M">
+          <div class="video">
+            <img src="https://i.ytimg.com/vi/ZJ-FtL1YaQA/maxresdefault.jpg" alt="Thumbnail" />
+            <h4>Aug 24 2019</h4>
+            <h3>Bachelor Of Computer Application, Top Colleges, Fees, etc.</h3>
+          </div>
+        </a>
+      </div>
+    </section>
+
+    <!-- OUR TEAM SECTION -->
+    <section class="our_team padding">
+      <div class="heading">
+        <h4>We Make Videos</h4>
+        <h2>Our Small Team</h2>
+      </div>
+      <div class="team">
+        <div class="members">
+          <img
+            src="https://lh3.googleusercontent.com/pw/ACtC-3fUCImskhVuk9OqOLGv2uwmHesISQnB00KeCs8Pjnx_Bz-jwjjO4l6xTT6UrlYPeVcxn9xzKYY9iUpGlsaancj2PdoAomkMk8eB3wgbOi4k60tbeg2utEFS-rJXnzq6UC6k6xTpxm3IjM4VFlfhURhl=w370-h396-no?authuser=0"
+            alt="" />
+          <div class="team_text">
+            <h3>Harshal Singh</h3>
+            <div class="profile">
+              <a href=""><i class="ri-facebook-line"></i></a>
+              <a href=""><i class="ri-instagram-line"></i></a>
+              <a href=""><i class="ri-twitter-line"></i></a>
+              <a href=""><i class="ri-linkedin-line"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="members">
+          <img
+            src="https://lh3.googleusercontent.com/pw/ACtC-3cLfaXEGifvAeS88UXjmndwJcHShdJ8QC_Zb1weVw50N4wguiOp2bAsBEWNVxbg50ObmRL2dfJFPUzp8NC3eA8drqMvZXrXAFdgENsquGcuZXNweq9dDx5MX6Pc-UBzZg5_xeP15SQ9hE2ken9yM4Tt=w370-h396-no?authuser=0"
+            alt="" />
+          <div class="team_text">
+            <h3>Harshal Singh</h3>
+            <div class="profile">
+              <a href=""><i class="ri-facebook-line"></i></a>
+              <a href=""><i class="ri-instagram-line"></i></a>
+              <a href=""><i class="ri-twitter-line"></i></a>
+              <a href=""><i class="ri-linkedin-line"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="members">
+          <img
+            src="https://lh3.googleusercontent.com/pw/ACtC-3fUOG3ya2v2X1Gvbfugrajxfshtyhli_c8MiTMVgFOA-afYWVeM6ibiNOBZA3R__l26nUWX3ABUgpRH9On8rWjIpB_EQ9xtOK33mAuLN0Bjik6MlWQY3iDX-y_q51ySVikgDqqRZR8YkZfvR0-iuoEB=w370-h396-no?authuser=0"
+            alt="" />
+          <div class="team_text">
+            <h3>Harshal Singh</h3>
+            <div class="profile">
+              <a href=""><i class="ri-facebook-line"></i></a>
+              <a href=""><i class="ri-instagram-line"></i></a>
+              <a href=""><i class="ri-twitter-line"></i></a>
+              <a href=""><i class="ri-linkedin-line"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="members">
+          <img
+            src="https://lh3.googleusercontent.com/pw/ACtC-3cvjZuw-Wi3OepeILVODKE5MZ_scexidL5JPXNwe5-mQJcFZpfysEn_9GFSCPNIJEnEl73IkhbhmM0z3GkpBG_RwHMuSfRFsOOFPR121Tu0j8YwIkwnZfojiRV-WqQInZINjSRyWR7mY0RhqyGqNj9l=w370-h396-no?authuser=0"
+            alt="" />
+          <div class="team_text">
+            <h3>Harshal Singh</h3>
+            <div class="profile">
+              <a href=""><i class="ri-facebook-line"></i></a>
+              <a href=""><i class="ri-instagram-line"></i></a>
+              <a href=""><i class="ri-twitter-line"></i></a>
+              <a href=""><i class="ri-linkedin-line"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SUBSCRIBE SECTION -->
+    <section id="contact" class="subscribe_box">
+      <div class="subscribe_banner">
+        <h1><span>Subscribe to our channel</span> & watch our latest videos.</h1>
+        <a class="yt_btn" href="https://www.youtube.com/@RohitKharwar/">
+          <p>Youtube Channel</p>
+          <img
+            src="https://lh3.googleusercontent.com/pw/ACtC-3cwSqgPSWFUEz7mP-a_fYrz9-FBCIAq-JA88IK40HI3YL4-R0XLHJpRms2wuOZ8_HDDcCC3tJltXTMVLmK3sm7okUsCtZQ1kYkWIMygimjBQKI671BQdpMu0Yoz9ibHN88VEVM6WcmHWp5XzgvDlF3Q=w531-h373-no?authuser=0"
+            alt="YouTube Button" />
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <!-- CONTACT SECTION -->
+  <!-- FOOTER -->
+  <footer>
+    <div class="yt_link_box">
+      <div class="yt_link">
+        <h4>YouTube</h4>
+        <ul>
+          <li><a href="">Channel</a></li>
+          <li><a href="">Top Videos</a></li>
+          <li><a href="">New Release</a></li>
+          <li><a href="">Popular Video</a></li>
+          <li><a href="">Most Views</a></li>
+        </ul>
+      </div>
+      <div class="yt_link">
+        <h4>Free Books</h4>
+        <ul>
+          <li><a href="">JEE Book</a></li>
+          <li><a href="">NCERT</a></li>
+          <li><a href="">R.D Sharma</a></li>
+          <li><a href="">H.C Verma</a></li>
+          <li><a href="">State Board</a></li>
+        </ul>
+      </div>
+      <div class="yt_link">
+        <h4>Help Center</h4>
+        <ul>
+          <li><a href="">Privacy & Policy</a></li>
+          <li><a href="">Terms & Condition</a></li>
+        </ul>
       </div>
     </div>
-    <main>
-      <!-- TOP SECTION -->
-      <section id="home" class="hero padding">
-        <div class="banner">
-          <!-- left -->
-          <div class="banner_text">
-            <div class="typeof_title">
-              <h1>Counsellor</h1>
-            </div>
-            <div class="yt_name">
-              <h1>Harshal Singh</h1>
-            </div>
-            <div class="yt_profession">
-              <h2>Career Counsellor & Motivational Youtuber</h2>
-            </div>
-            <div class="yt_btn">
-              <p>Youtube Channel</p>
-              <img
-                src="https://lh3.googleusercontent.com/pw/ACtC-3cwSqgPSWFUEz7mP-a_fYrz9-FBCIAq-JA88IK40HI3YL4-R0XLHJpRms2wuOZ8_HDDcCC3tJltXTMVLmK3sm7okUsCtZQ1kYkWIMygimjBQKI671BQdpMu0Yoz9ibHN88VEVM6WcmHWp5XzgvDlF3Q=w531-h373-no?authuser=0"
-                alt="YouTube Button"
-              />
-            </div>
-          </div>
-          <!-- right -->
-          <div class="banner_img">
-            <img
-              src="https://lh3.googleusercontent.com/pw/ACtC-3eB3yPKoWSGAXy5wJ-vtC7H2pZnVK-Wb1TFVKR6qSF1g_a50vsEHAmsXMxfdSbfFz4c5lBeVkuvc4r6U4SGA6-cTs03kBmgLfiXRfrDK2mL7yehqjy1qvj-DRhdtvKEawNRoSJrERVjhi0vwrelVLUO=w990-h903-no?authuser=0"
-              alt="Top image"
-            />
-          </div>
-        </div>
-      </section>
+    <div class="email_box yt_link">
+      <h4>subscribe to our Email</h4>
+      <h2>For Latest News & Updates</h2>
+      <input type="email" name="email" id="email" placeholder="Email Address..." required />
+      <button type="submit">
+        <a href="mailto:harshal3171@gmail.com?subject=HRS - YouTuber Blog Page">Subscribe</a>
+      </button>
+    </div>
+  </footer>
 
-      <!-- CHANNEL SECTION -->
-      <section class="channel padding">
-        <div class="arrow">
-          <img
-            src="https://lh3.googleusercontent.com/pw/ACtC-3drCm6Yjwhoi4TROmZzTBJ_IglU8Jx0LQ00gYz_Os4vyHKALY4lgldnKWjbT4blVP01wf6trS1QEIFIbyyL7a2FJiqw9pIF9ju0HesVAjAf_1srsannP0hPQTHeVYj_Jvbi6QG5n2hMifekbVHKKMUd=w21-h197-no?authuser=0"
-            alt="arrow"
-          />
-          <div class="tag">
-            <h1>Great place for <span>college students</span></h1>
-          </div>
-        </div>
-        <div class="text">
-          <div class="channel_text">
-            <h3>1. Career Guidance</h3>
-            <p>Help you to manage your journey through life, learning and work changes.</p>
-          </div>
-          <div class="channel_text">
-            <h3>2. Motivational</h3>
-            <p>Motivational and inspirational videos make you feel inspired & encouraged.</p>
-          </div>
-          <div class="channel_text">
-            <h3>3. Study Related</h3>
-            <p>Mange your study plan & also get the latest updates related education.</p>
-          </div>
-        </div>
-      </section>
-
-      <!-- FEATURES SECTION -->
-      <section class="features padding">
-        <div class="f_left">
-          <div class="subscribe">
-            <i class="ri-play-circle-fill"></i>
-            <h2>subscribe our channel</h2>
-          </div>
-          <div class="f_text">
-            <h1>Our videos are clean, informative and helpful for students.</h1>
-            <p>Our videos are helpful for all generation, college/school students from any stream.</p>
-          </div>
-          <div class="yt_btn">
-            <p>Youtube Channel</p>
-            <img
-              src="https://lh3.googleusercontent.com/pw/ACtC-3cwSqgPSWFUEz7mP-a_fYrz9-FBCIAq-JA88IK40HI3YL4-R0XLHJpRms2wuOZ8_HDDcCC3tJltXTMVLmK3sm7okUsCtZQ1kYkWIMygimjBQKI671BQdpMu0Yoz9ibHN88VEVM6WcmHWp5XzgvDlF3Q=w531-h373-no?authuser=0"
-              alt="YouTube Button"
-            />
-          </div>
-        </div>
-        <div class="f_right">
-          <img
-            class="camera"
-            src="https://lh3.googleusercontent.com/pw/ACtC-3f6giyc4D9X6myOSL9ozIkMaJ3QytgcqD4Il4LZD4xWjIz3R_i7aha4t6vzx-CMyr4Jyr4s345D7NBkLnXxgVHdSxAkB6hm8pl6PvB9Yx8pRpFfDdwxs0DJCdxw350z7cTgw9UfEJzv2Eing60-vnFw=w626-h417-no?authuser=0"
-            alt="Cameramen"
-          />
-          <img
-            class="hd"
-            src="https://lh3.googleusercontent.com/pw/ACtC-3eO3IdjO0PmBcxMlQk1F-Y0rBENJMSLazEVhcpt-Z1XZcxBUWTl2csJfoxVq-7L7WDt-gtV1Y8KPgdeUlgmr3YVffPQsrRhHeTe7k8IW5l43RVPXws3SODotdhpcmw_13BsbAbFiBUGKlQGoBp0dzz2=w200-h132-no?authuser=0"
-            alt="Full HD"
-          />
-        </div>
-      </section>
-
-      <!-- ABOUT SECTION -->
-      <section id="about_us" class="about_us padding">
-        <div class="about">
-          <div class="about_text">
-            <h1>
-              <span>Harshal Singh</span>
-              Based in Mumbai Since 2019.
-            </h1>
-            <div class="about_tag">
-              <div class="about_tag_line">
-                <p>
-                  I cannot do all the good things that the world needs. But the world needs all the good things that I
-                  can do.
-                </p>
-                <h3>- Harshal Singh</h3>
-              </div>
-              <div class="about_tag_line">
-                <p>Start each day with a new hope, leave bad memories behind and have faith for a better tomorrow.</p>
-                <h3>- Rohit Kharwar</h3>
-              </div>
-            </div>
-          </div>
-          <hr />
-          <div class="stats">
-            <div class="stats_box">
-              <h2>+3.4k</h2>
-              <span>
-                <h3>YouTube</h3>
-                <p>User subscribe</p>
-              </span>
-            </div>
-            <div class="stats_box">
-              <h2>+2</h2>
-              <span>
-                <h3>Video</h3>
-                <p>Per Week</p>
-              </span>
-            </div>
-            <div class="stats_box">
-              <h2>+2.8L</h2>
-              <span>
-                <h3>Viewer</h3>
-                <p>Number of Views</p>
-              </span>
-            </div>
-            <div class="stats_box">
-              <h2>14k</h2>
-              <span>
-                <h3>Comment</h3>
-                <p>Viewers Engagement</p>
-              </span>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- RECENT VIDEOS SECTION -->
-      <section id="videos" class="recent_videos padding">
-        <div class="heading">
-          <h4>Must Watch</h4>
-          <h2>Our Recent Videos</h2>
-        </div>
-        <div class="videos_box">
-          <a href="https://youtu.be/O9kDUfFm1Ng">
-            <div class="video">
-              <img src="https://i.ytimg.com/vi/O9kDUfFm1Ng/maxresdefault.jpg" alt="Thumbnail" />
-              <h4>Aug 24 2019</h4>
-              <h3>Vedic Maths - Introduction | Every JEE Aspirants Must Watch.</h3>
-            </div>
-          </a>
-          <a href="https://youtu.be/KLX8OQdjngk">
-            <div class="video">
-              <img src="https://i.ytimg.com/vi/KLX8OQdjngk/maxresdefault.jpg" alt="Thumbnail" />
-              <h4>Aug 24 2019</h4>
-              <h3>5 Motivational Movies, Every Students Must Watch.</h3>
-            </div>
-          </a>
-          <a href="https://youtu.be/6P5p2UWX2x0">
-            <div class="video">
-              <img src="https://i.ytimg.com/vi/6P5p2UWX2x0/maxresdefault.jpg" alt="Thumbnail" />
-              <h4>Aug 24 2019</h4>
-              <h3>How To Prepare For JEE Mains Exam At Home Must Watch.</h3>
-            </div>
-          </a>
-          <a href="https://youtu.be/reGOomBx-9s">
-            <div class="video">
-              <img src="https://i.ytimg.com/vi/reGOomBx-9s/maxresdefault.jpg" alt="Thumbnail" />
-              <h4>Aug 24 2019</h4>
-              <h3>Top 10 Colleges For Computer Science Engineering In India</h3>
-            </div>
-          </a>
-          <a href="https://youtu.be/q0ipAcF9IKs">
-            <div class="video">
-              <img src="https://i.ytimg.com/vi/q0ipAcF9IKs/maxresdefault.jpg" alt="Thumbnail" />
-              <h4>Aug 24 2019</h4>
-              <h3>Career Options After B.Sc. Computer Science Must Watch.</h3>
-            </div>
-          </a>
-          <a href="https://youtu.be/0rkAd10yz3M">
-            <div class="video">
-              <img src="https://i.ytimg.com/vi/0rkAd10yz3M/maxresdefault.jpg" alt="Thumbnail" />
-              <h4>Aug 24 2019</h4>
-              <h3>How To Become FREELANCER & Earn Money From Online Platform.</h3>
-            </div>
-          </a>
-          <a href="https://youtu.be/reGOomBx-9s">
-            <div class="video">
-              <img src="https://i.ytimg.com/vi/OxiWUVm-fUQ/maxresdefault.jpg" alt="Thumbnail" />
-              <h4>Aug 24 2019</h4>
-              <h3>Diploma In Mechanical Engineering, Top Colleges, Fees, etc.</h3>
-            </div>
-          </a>
-          <a href="https://youtu.be/q0ipAcF9IKs">
-            <div class="video">
-              <img src="https://i.ytimg.com/vi/y1zY93CQyIw/maxresdefault.jpg" alt="Thumbnail" />
-              <h4>Aug 24 2019</h4>
-              <h3>Full Detail Video About NIMCET Entrance Exam.</h3>
-            </div>
-          </a>
-          <a href="https://youtu.be/0rkAd10yz3M">
-            <div class="video">
-              <img src="https://i.ytimg.com/vi/ZJ-FtL1YaQA/maxresdefault.jpg" alt="Thumbnail" />
-              <h4>Aug 24 2019</h4>
-              <h3>Bachelor Of Computer Application, Top Colleges, Fees, etc.</h3>
-            </div>
-          </a>
-        </div>
-      </section>
-
-      <!-- OUR TEAM SECTION -->
-      <section class="our_team padding">
-        <div class="heading">
-          <h4>We Make Videos</h4>
-          <h2>Our Small Team</h2>
-        </div>
-        <div class="team">
-          <div class="members">
-            <img
-              src="https://lh3.googleusercontent.com/pw/ACtC-3fUCImskhVuk9OqOLGv2uwmHesISQnB00KeCs8Pjnx_Bz-jwjjO4l6xTT6UrlYPeVcxn9xzKYY9iUpGlsaancj2PdoAomkMk8eB3wgbOi4k60tbeg2utEFS-rJXnzq6UC6k6xTpxm3IjM4VFlfhURhl=w370-h396-no?authuser=0"
-              alt=""
-            />
-            <div class="team_text">
-              <h3>Harshal Singh</h3>
-              <div class="profile">
-                <a href=""><i class="ri-facebook-line"></i></a>
-                <a href=""><i class="ri-instagram-line"></i></a>
-                <a href=""><i class="ri-twitter-line"></i></a>
-                <a href=""><i class="ri-linkedin-line"></i></a>
-              </div>
-            </div>
-          </div>
-          <div class="members">
-            <img
-              src="https://lh3.googleusercontent.com/pw/ACtC-3cLfaXEGifvAeS88UXjmndwJcHShdJ8QC_Zb1weVw50N4wguiOp2bAsBEWNVxbg50ObmRL2dfJFPUzp8NC3eA8drqMvZXrXAFdgENsquGcuZXNweq9dDx5MX6Pc-UBzZg5_xeP15SQ9hE2ken9yM4Tt=w370-h396-no?authuser=0"
-              alt=""
-            />
-            <div class="team_text">
-              <h3>Harshal Singh</h3>
-              <div class="profile">
-                <a href=""><i class="ri-facebook-line"></i></a>
-                <a href=""><i class="ri-instagram-line"></i></a>
-                <a href=""><i class="ri-twitter-line"></i></a>
-                <a href=""><i class="ri-linkedin-line"></i></a>
-              </div>
-            </div>
-          </div>
-          <div class="members">
-            <img
-              src="https://lh3.googleusercontent.com/pw/ACtC-3fUOG3ya2v2X1Gvbfugrajxfshtyhli_c8MiTMVgFOA-afYWVeM6ibiNOBZA3R__l26nUWX3ABUgpRH9On8rWjIpB_EQ9xtOK33mAuLN0Bjik6MlWQY3iDX-y_q51ySVikgDqqRZR8YkZfvR0-iuoEB=w370-h396-no?authuser=0"
-              alt=""
-            />
-            <div class="team_text">
-              <h3>Harshal Singh</h3>
-              <div class="profile">
-                <a href=""><i class="ri-facebook-line"></i></a>
-                <a href=""><i class="ri-instagram-line"></i></a>
-                <a href=""><i class="ri-twitter-line"></i></a>
-                <a href=""><i class="ri-linkedin-line"></i></a>
-              </div>
-            </div>
-          </div>
-          <div class="members">
-            <img
-              src="https://lh3.googleusercontent.com/pw/ACtC-3cvjZuw-Wi3OepeILVODKE5MZ_scexidL5JPXNwe5-mQJcFZpfysEn_9GFSCPNIJEnEl73IkhbhmM0z3GkpBG_RwHMuSfRFsOOFPR121Tu0j8YwIkwnZfojiRV-WqQInZINjSRyWR7mY0RhqyGqNj9l=w370-h396-no?authuser=0"
-              alt=""
-            />
-            <div class="team_text">
-              <h3>Harshal Singh</h3>
-              <div class="profile">
-                <a href=""><i class="ri-facebook-line"></i></a>
-                <a href=""><i class="ri-instagram-line"></i></a>
-                <a href=""><i class="ri-twitter-line"></i></a>
-                <a href=""><i class="ri-linkedin-line"></i></a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- SUBSCRIBE SECTION -->
-      <section id="contact" class="subscribe_box">
-        <div class="subscribe_banner">
-          <h1><span>Subscribe to our channel</span> & watch our latest videos.</h1>
-          <div class="yt_btn">
-            <p>Youtube Channel</p>
-            <img
-              src="https://lh3.googleusercontent.com/pw/ACtC-3cwSqgPSWFUEz7mP-a_fYrz9-FBCIAq-JA88IK40HI3YL4-R0XLHJpRms2wuOZ8_HDDcCC3tJltXTMVLmK3sm7okUsCtZQ1kYkWIMygimjBQKI671BQdpMu0Yoz9ibHN88VEVM6WcmHWp5XzgvDlF3Q=w531-h373-no?authuser=0"
-              alt="YouTube Button"
-            />
-          </div>
-        </div>
-      </section>
-    </main>
-
-    <!-- CONTACT SECTION -->
-    <!-- FOOTER -->
-    <footer>
-      <div class="yt_link_box">
-        <div class="yt_link">
-          <h4>YouTube</h4>
-          <ul>
-            <li><a href="">Channel</a></li>
-            <li><a href="">Top Videos</a></li>
-            <li><a href="">New Release</a></li>
-            <li><a href="">Popular Video</a></li>
-            <li><a href="">Most Views</a></li>
-          </ul>
-        </div>
-        <div class="yt_link">
-          <h4>Free Books</h4>
-          <ul>
-            <li><a href="">JEE Book</a></li>
-            <li><a href="">NCERT</a></li>
-            <li><a href="">R.D Sharma</a></li>
-            <li><a href="">H.C Verma</a></li>
-            <li><a href="">State Board</a></li>
-          </ul>
-        </div>
-        <div class="yt_link">
-          <h4>Help Center</h4>
-          <ul>
-            <li><a href="">Privacy & Policy</a></li>
-            <li><a href="">Terms & Condition</a></li>
-          </ul>
-        </div>
-      </div>
-      <div class="email_box yt_link">
-        <h4>subscribe to our Email</h4>
-        <h2>For Latest News & Updates</h2>
-        <input type="email" name="email" id="email" placeholder="Email Address..." required />
-        <button type="submit">
-          <a href="mailto:harshal3171@gmail.com?subject=HRS - YouTuber Blog Page">Subscribe</a>
-        </button>
-      </div>
-    </footer>
-
-    <div class="copy_right">
-      <a href="index.html" class="logo">
-        <i class="ri-quill-pen-line"></i>
-        <h3>YouTuber</h3>
-      </a>
-      <div class="flip">
-        <h4>© 2021 YouTuber Page - Harshal R. Singh. All rights reserved.</h4>
-        <div class="my_profile">
-          <a href=""><i class="ri-facebook-fill"></i></a>
-          <a href=""><i class="ri-twitter-fill"></i></a>
-          <a href=""><i class="ri-linkedin-fill"></i></a>
-          <a href=""><i class="ri-instagram-line"></i></a>
-        </div>
+  <div class="copy_right">
+    <a href="index.html" class="logo">
+      <i class="ri-quill-pen-line"></i>
+      <h3>YouTuber</h3>
+    </a>
+    <div class="flip">
+      <h4>© 2021 YouTuber Page - Harshal R. Singh. All rights reserved.</h4>
+      <div class="my_profile">
+        <a href=""><i class="ri-facebook-fill"></i></a>
+        <a href=""><i class="ri-twitter-fill"></i></a>
+        <a href=""><i class="ri-linkedin-fill"></i></a>
+        <a href=""><i class="ri-instagram-line"></i></a>
       </div>
     </div>
+  </div>
 
-    <!-- JavaScript File -->
-    <script src="index.js"></script>
-  </body>
+  <!-- JavaScript File -->
+  <script src="index.js"></script>
+</body>
+
 </html>
